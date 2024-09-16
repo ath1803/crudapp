@@ -95,7 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h2 class="mb-4">Login</h2>
         <form method="post" id="login-form">
             <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email">EmailID</label>
                 <input type="email" class="form-control <?php echo !empty($emailError) ? 'is-invalid' : ''; ?>" id="email" name="email" value="<?php echo htmlspecialchars($email); ?>" required>
                 <?php if (!empty($emailError)) { echo "<div class='error-message'>$emailError</div>"; } ?>
             </div>
